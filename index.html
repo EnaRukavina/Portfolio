@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ena Rukavina</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="MaterialDesign-Webfont-master/css/materialdesignicons.min.css"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <!-- fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/3899eff944.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="content">
+        <ul class="menu-list">
+          <li class="nav__item">
+            <a class="nav__link" href="#top">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Contact</a>
+          </li>
+        </ul>
+
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="section header" id="top">
+      <div class="title">
+        <h1>
+          Hello, I'm <span>Ena Rukavina</span>. <br />
+          I'm a Front-end Web Developer.
+        </h1>
+        <a class="btn btn--dark arrow-rotate" href="#section--1"
+          >View my work <i class="arrow mdi mdi-arrow-right"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about section" id="section--1">
+      <h1 class="label">About</h1>
+      <hr class="underline" />
+      <div class="about__container">
+        <div class="face">
+          <img
+            src="img/pexels-ingrid-santana-2100063.jpg"
+            alt="face img"
+            class="face__img"
+          />
+          <div class="face__text">
+            <p>
+              My name is Ena, I am a self-taught front-end web developer from
+              Podgorica, Montenegro.
+            </p>
+          </div>
+        </div>
+
+        <!-- skills -->
+        <div class="skills">
+          <h2 class="skills__label">Skills</h2>
+          <div class="skills__icons">
+            <div class="icon">
+              <i class="icon__logo fab fa-html5"></i>
+              <p class="icon__label">HTML5</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fab fa-css3-alt"></i>
+              <p class="icon__label">CSS</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fab fa-sass"></i>
+              <p class="icon__label">Sass</p>
+            </div>
+
+            <div class="icon">
+              <i class="icon__logo fab fa-js"></i>
+              <p class="icon__label">JavaScript</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fas fa-mobile-alt"></i>
+              <p class="icon__label">Responsive Design</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fas fa-code"></i>
+              <p class="icon__label">Clean Code</p>
+            </div>
+          </div>
+          <div class="cv">
+            <a class="btn download" href="cv.pdf" target="_blank"
+              >Download my CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+
+    <section class="projects section" id="section--2">
+      <h1 class="label">Projects</h1>
+      <hr class="underline" />
+      <div class="card-wrapper">
+        <div class="card">
+          <p>
+            A game in which players take turns to roll a dice as many times as
+            they wish, adding all roll results to a running total, but losing
+            their gained score for the turn if they roll a 1.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/pig-game.png" alt="trillo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Pig Game</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Pig-Game" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Pig-Game/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>
+            Project made for the JS course in which I learned how to use
+            Intersection Observer API, lazy-loading images, how to make a simple
+            slider and reveal element on scroll.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/bankist.png" alt="bankist" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Bankist</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Bankist" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Bankist/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>Project made for the JavaScript course</p>
+          <div class="card__thumbnail">
+            <img src="img/bank.png" alt="bank" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">bank</h3>
+            <div class="btns">
+              <a href="" target="_blank"><i class="mdi mdi-github"></i>code</a>
+              <a href="" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>Project made for the JavaScript course</p>
+          <div class="card__thumbnail">
+            <img src="img/menu.png" alt="menu" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Menu</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Menu" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Menu/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>
+            Project made for the Advanced CSS and Sass course in which I learned
+            a lot of advanced and modern CSS properties and animations.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/natours.png" alt="natours" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Natours</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Natours" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Natours/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Challenge by Frontend Mentor where I had to use the provided mockup
+            designs to create a Huddle landing page with curved sections.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/huddle.png" alt="huddle" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Huddle</h3>
+            <div class="btns">
+              <a
+                href="https://github.com/EnaRukavina/HuddleLP-curved"
+                target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a
+                href="https://enarukavina.github.io/HuddleLP-curved/"
+                target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Challenge by Frontend Mentor where I had to use the provided mockup
+            designs to create a Fylo landing page.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/fylo.png" alt="fylo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Fylo</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/FyloLP" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/FyloLP/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Project made for the Advanced CSS and Sass course with an emphasis
+            on using CSS Grid.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/nexter.png" alt="nexter" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Nexter</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Nexter" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Nexter/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Project made for the Advanced CSS and Sass course with an emphasis
+            on using CSS Flexbox.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/trillo.png" alt="trillo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Trillo</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/Trillo" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://enarukavina.github.io/Trillo/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="section--3">
+      <h1 class="label label--light">Contact</h1>
+      <hr class="underline" />
+      <div class="contact__content">
+        <p class="contact__text">
+          If you want to get in touch with me feel free to email me.
+        </p>
+
+        <a
+          href="mailto:&#101;&#110;&#97;&#46;&#114;&#117;&#107;&#97;&#118;&#105;&#110;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+          class="btn btn--dark contact__btn arrow-translate"
+          >Email Me <i class="arrow mdi mdi-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p class="copyright__text">
+        Ena Rukavina
+        <span class="copyright__text--highlight">
+          &copy;<span class="year"></span
+        ></span>
+      </p>
+    </div>
+  </body>
+</html>

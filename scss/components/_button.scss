@@ -1,0 +1,41 @@
+.btn {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.btn--dark {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  margin-top: 1rem;
+  &:hover {
+    background-color: var(--color-3);
+    border: 1px solid var(--color-3);
+  }
+}
+
+.arrow-rotate {
+  .arrow::before {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+
+  &:hover {
+    .arrow::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.arrow-translate {
+  .arrow::before {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .arrow::before {
+      transform: translateX(5px);
+    }
+  }
+}

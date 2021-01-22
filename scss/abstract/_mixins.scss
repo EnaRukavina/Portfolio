@@ -1,0 +1,20 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == min600 {
+    @media only screen and (min-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == min800 {
+    @media only screen and (min-width: 50em) {
+      //800px
+      @content;
+    }
+  }
+  @if $breakpoint == max320 {
+    @media only screen and (max-width: 20em) {
+      //320px
+      @content;
+    }
+  }
+}

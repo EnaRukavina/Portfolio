@@ -5,7 +5,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.menu-list');
 const navHeight = navbar.getBoundingClientRect().height;
 
-// Sticky navbar
+// Change navbar style on scroll
 window.onscroll = () => {
   this.scrollY > 20
     ? navbar.classList.add('sticky')

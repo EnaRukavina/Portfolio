@@ -1,0 +1,31 @@
+/* CONTACT */
+
+.contact {
+  background-color: var(--color-1);
+  color: white;
+
+  &__content {
+    text-align: center;
+    padding: 5rem 0 7rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+}
+
+// COPYRIGHT
+.copyright {
+  padding: 1rem;
+  background-color: var(--color-5);
+  &__text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.7;
+    &--highlight {
+      color: var(--color-2);
+    }
+  }
+}

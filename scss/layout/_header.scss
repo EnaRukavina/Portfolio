@@ -1,0 +1,44 @@
+/* HEADER */
+
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: var(--color-white);
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 1.2;
+    padding: 1rem;
+
+    span {
+      color: var(--color-2);
+      font-weight: 300;
+    }
+  }
+}
+
+.label {
+  font-size: 3.5rem;
+  color: var(--color-5);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  transition: all 0.3s;
+  font-weight: 600;
+  &--light {
+    color: white;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,12 @@
+canvas {
+  display: block;
+  background-color: var(--color-1);
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

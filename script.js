@@ -1,47 +1,63 @@
-const navbar = document.querySelector('.navbar');
-const link = document.querySelectorAll('.nav__link');
-const btnScrollTo = document.querySelector('.btn--dark');
+const navbar = document.querySelector('.nav');
+const btn = document.querySelector('.title__btn');
 const navToggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.menu-list');
-const navHeight = navbar.getBoundingClientRect().height;
+const navList = document.querySelector('.nav__list');
+const aboutSection = document.querySelector('#about');
+const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('.section');
 
-// Change navbar style on scroll
-window.onscroll = () => {
-  this.scrollY > 20
-    ? navbar.classList.add('sticky')
-    : navbar.classList.remove('sticky');
-};
-
-const section1 = document.querySelector('#section--1');
-
-btnScrollTo.addEventListener('click', function (e) {
-  section1.scrollIntoView({
+// View my work button
+btn.addEventListener('click', function (e) {
+  aboutSection.scrollIntoView({
     behavior: 'smooth',
   });
 });
 
-// Scroll to section
-links.addEventListener('click', function (e) {
-  e.preventDefault();
-  console.log(e.target);
-  // Matching strategy - to ingore clicks that don't happen on one of the links
-  if (e.target.classList.contains('nav__link')) {
-    const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({
-      behavior: 'smooth',
-    });
-
-    links.classList.toggle('show-links');
-  }
-});
-
 //Toggle navbar
 navToggle.addEventListener('click', function () {
-  links.classList.toggle('show-links');
+  navList.classList.toggle('show-links');
   if (!navbar.classList.contains('sticky')) navbar.classList.add('sticky');
 });
 
-// Highlight links on scroll
+// Smooth scrolling
+const makeNavLinksSmooth = () => {
+  for (let n in navLinks) {
+    if (navLinks.hasOwnProperty(n)) {
+      navLinks[n].addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(navLinks[n].hash).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    }
+  }
+};
+
+// Spy scrolling
+const spyScrolling = () => {
+  window.onscroll = () => {
+    this.scrollY > 20
+      ? navbar.classList.add('sticky')
+      : navbar.classList.remove('sticky');
+
+    const scrollPos =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (let s in sections)
+      if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos) {
+        const id = sections[s].id;
+        document.querySelector('.active').classList.remove('active');
+        document
+          .querySelector(`a[href*=${id}]`)
+          .parentNode.classList.add('active');
+      }
+  };
+};
+
+makeNavLinksSmooth();
+spyScrolling();
+
+/* // Highlight links on scroll
 document.addEventListener('DOMContentLoaded', () => {
   (function scrollSpy() {
     const targets = document.querySelectorAll('.section'),
@@ -70,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })();
     }
   })();
-});
+}); */
 
 // copyright year
 let year = document.querySelector('.year');

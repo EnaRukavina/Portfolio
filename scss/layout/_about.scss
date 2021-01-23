@@ -26,16 +26,17 @@
     margin-top: 3rem;
     &__img {
       width: 100%;
-      clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 30%,
-        100% 70%,
-        70% 100%,
-        30% 100%,
-        0% 70%,
-        0% 30%
-      );
+      // clip-path: polygon(
+      //   30% 0%,
+      //   70% 0%,
+      //   100% 30%,
+      //   100% 70%,
+      //   70% 100%,
+      //   30% 100%,
+      //   0% 70%,
+      //   0% 30%
+      // );
+      border-radius: 50%;
     }
     &__text {
       font-size: 1.5rem;
@@ -57,7 +58,6 @@
 
     &__label {
       font-size: 2rem;
-      font-family: var(--font-primary);
       margin-bottom: 2rem;
       color: var(--color-5);
     }
@@ -66,13 +66,15 @@
       display: flex;
       align-items: baseline;
       justify-content: center;
-      text-align: center;
       flex-wrap: wrap;
+      text-align: center;
+
       .icon {
         display: flex;
         flex-direction: column;
         margin: 1rem;
         width: 7rem;
+
         &__logo {
           font-size: 3rem;
           color: var(--color-2);
@@ -84,10 +86,12 @@
         }
       }
     }
+
     .cv {
       text-align: center;
       padding: 0;
       margin-top: 7rem;
+      font-size: 1.8rem;
 
       @include respond(min600) {
         margin-top: 2rem;

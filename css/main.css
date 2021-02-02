@@ -505,7 +505,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
+  margin: 2rem 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
@@ -534,11 +534,17 @@ header {
 .projects .card p {
   position: absolute;
   z-index: -1;
-  font-size: 1.5rem;
-  width: 25rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 33.75em) {
+  .projects .card p {
+    width: 25rem;
+    font-size: 1.5rem;
+  }
 }
 
 .projects .card:hover {

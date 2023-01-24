@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ena Rukavina</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="stylesheet"
       href="MaterialDesign-Webfont-master/css/materialdesignicons.min.css"
@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/3899eff944.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -58,7 +59,6 @@
           >View my work <i class="arrow mdi mdi-arrow-right"></i
         ></a>
       </div>
-      
     </header>
 
     <!-- ABOUT -->
@@ -70,8 +70,9 @@
           <img src="img/ena.png" alt="face img" class="face__img" />
           <div class="face__text">
             <p>
-              My name is Ena, I am a React.JS developer from Podgorica,
-              Montenegro.
+              My name is Ena, I am a Frontend Developer dedicated to creating
+              visually appealing and intuitive websites for optimal user
+              experience.
             </p>
           </div>
         </div>
@@ -85,8 +86,31 @@
               <p class="icon__label">React.JS</p>
             </div>
             <div class="icon">
+              <iconify-icon
+                class="icon__logo"
+                width="27"
+                icon="simple-icons:typescript"
+              ></iconify-icon>
+              <p class="icon__label">TypeScript</p>
+            </div>
+            <div class="icon">
               <i class="icon__logo fab fa-js"></i>
               <p class="icon__label">JavaScript</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fab fa-react"></i>
+              <p class="icon__label">React Native</p>
+            </div>
+            <div class="icon">
+              <iconify-icon
+                icon="mdi:graphql"
+                class="icon__logo"
+              ></iconify-icon>
+              <p class="icon__label">GraphQL</p>
+            </div>
+            <div class="icon">
+              <i class="icon__logo fab fa-github"></i>
+              <p class="icon__label">Git/GitHub</p>
             </div>
             <div class="icon">
               <i class="icon__logo fab fa-html5"></i>
@@ -100,10 +124,27 @@
               <i class="icon__logo fab fa-sass"></i>
               <p class="icon__label">Sass</p>
             </div>
+            <div class="icon">
+              <iconify-icon
+                icon="mdi:tailwind"
+                class="icon__logo"
+              ></iconify-icon>
+              <p class="icon__label">Tailwind</p>
+            </div>
+            <div class="icon">
+              <iconify-icon
+                icon="simple-icons:styledcomponents"
+                class="icon__logo"
+              ></iconify-icon>
+              <p class="icon__label">Styled Components</p>
+            </div>
 
             <div class="icon">
-              <i class="icon__logo fab fa-github"></i>
-              <p class="icon__label">GitHub</p>
+              <iconify-icon
+                icon="tabler:brand-cypress"
+                class="icon__logo"
+              ></iconify-icon>
+              <p class="icon__label">Cypress</p>
             </div>
             <div class="icon">
               <i class="icon__logo fas fa-mobile-alt"></i>
@@ -120,7 +161,7 @@
             </div>
           </div>
           <div class="cv">
-            <a class="btn download" href="cv_updated.pdf" target="_blank"
+            <a class="btn download" href="cv2023.pdf" target="_blank"
               >Download my CV</a
             >
           </div>
@@ -133,6 +174,60 @@
       <h1 class="label">Projects</h1>
       <hr class="underline" />
       <div class="card-wrapper">
+        <div class="card">
+          <p>
+            Software for service providers which offers a wide range of professional tools for increasing sales, managing appointments and schedule.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/zoyya-b2b.PNG" alt="trillo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Zoyya B2B</h3>
+            <div class="btns">
+             
+              <a href="https://www.zoyya.com/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i>SITE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            Online marketplace for all service providers, offering a modern web and mobile interface for clients to book their appointments, any time 24/7.
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/zoyya-b2c.PNG" alt="trillo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">Zoyya B2C</h3>
+            <div class="btns">
+             
+              <a href="https://app.zoyya.com/home" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i>SITE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            GitHub user search app.
+            <strong>ReactJS, TypeScript, Tailwind, Zustand</strong>
+          </p>
+          <div class="card__thumbnail">
+            <img src="img/devfinder.PNG" alt="trillo" />
+          </div>
+          <div class="card__details">
+            <h3 class="card__title">devfinder</h3>
+            <div class="btns">
+              <a href="https://github.com/EnaRukavina/devfinder" target="_blank"
+                ><i class="mdi mdi-github"></i>code</a
+              >
+              <a href="https://devfinder-mocha.vercel.app/" target="_blank"
+                ><i class="mdi mdi-open-in-new"></i> site</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="card">
           <p>
             A game in which players take turns to roll a dice as many times as

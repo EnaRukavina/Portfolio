@@ -59,6 +59,9 @@
         z-index: -1;
         display: block;
         transition: all 0.3s;
+        height: 162px;
+        object-fit: cover;
+       
         &:hover {
           opacity: 0.1;
         }
